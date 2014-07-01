@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 //Napisz bibliotekę dll, która zawiera metodę sortującą tablicę liczb całkowitych. Sortowanie ma się ma 
 //odbywać algorytmem zwanym sortowaniem szybkim (quick sort). W sortowaniu szybkim wybieramy 
 //pewną wartość x, która dzieli nam tablicę na dwie części a[0], a[1]...a[q] oraz a[q+1]...a[n-1] i jest 
@@ -52,7 +54,7 @@ namespace Cwiczenie04_TestSortowania
                 liczby[i] = r.Next(0, 1001);
                 Console.Write("{0}, ", liczby[i]);
             }
-            QuickSort.Sortuj(liczby);
+            Cwiczenie04_TestSortowania.Quicksort.Sortuj(liczby);
             Console.WriteLine("\n\nTablica po sortowaniu:");
             foreach (int i in liczby)
                 Console.Write("{0}, ", i);
