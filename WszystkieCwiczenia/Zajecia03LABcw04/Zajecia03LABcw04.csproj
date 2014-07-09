@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="OsobaClass.cs" />
+    <Compile Include="TestOsob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentClass.cs" />
+    <Compile Include="StypendystaClass.cs" />
+    <Compile Include="WykladowcaClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zajecia03LABcw05\Zajecia03LABcw05.csproj">
+      <Project>{cb97b9d4-271f-4c17-847a-a24a047a09e3}</Project>
+      <Name>Zajecia03LABcw05</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
