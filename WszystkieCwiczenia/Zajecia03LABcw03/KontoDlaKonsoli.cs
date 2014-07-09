@@ -1,4 +1,4 @@
-﻿using Bank;
+﻿using BankNamepspace;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +37,7 @@ namespace Zajecia03LABcw03
             string nazwisko = Console.ReadLine();
             decimal saldo = pobierzLiczbeDecimal("Podaj saldo początkowe: ");
             int pin = pobierzLiczbeInt("Podaj pin: ");
-            return new Konto(new Osoba(imie, nazwisko), saldo, pin); 
+            return new Konto(new OsobaClass(imie, nazwisko), saldo, pin); 
         }
         public static void Wplac(this Konto k) 
         { 

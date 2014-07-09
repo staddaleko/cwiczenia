@@ -5,13 +5,13 @@ using System.Text;
 
 using System.IO;
 
-namespace Bank
+namespace BankNamepspace
 {
-    class Osoba
+    class OsobaClass
     {
         public string Imie { set; get; }
         public string Nazwisko { set; get; }
-        public Osoba(string imie, string nazwisko)
+        public OsobaClass(string imie, string nazwisko)
         {
             Imie = imie;
             Nazwisko = nazwisko;
@@ -53,11 +53,11 @@ namespace Bank
 
 
 
-        public Osoba Wlasciciel { set; get; }
+        public OsobaClass Wlasciciel { set; get; }
         private decimal saldo;
         private int pin;
 
-        public Konto(Osoba wlasciciel):this(wlasciciel,0,0)
+        public Konto(OsobaClass wlasciciel):this(wlasciciel,0,0)
         {            
         }
 
@@ -67,7 +67,7 @@ namespace Bank
             this.saldo = saldoPoczatkowe;
             this.pin = pin;
         }*/
-        public Konto(Osoba wlasciciel, decimal saldoPoczatkowe, int pin)
+        public Konto(OsobaClass wlasciciel, decimal saldoPoczatkowe, int pin)
         {
             Wlasciciel = wlasciciel; 
             this.saldo = saldoPoczatkowe; 
